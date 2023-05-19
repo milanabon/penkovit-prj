@@ -1,0 +1,124 @@
+h1{
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 130%;
+}
+
+h2{
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 130%;
+}
+
+.career{
+  padding-top: 80px;
+}
+
+.career-descr{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.career-descr p{
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.vacancies{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 260px;
+}
+
+.vacancies-descr p{
+  width: 580px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.vacancies-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card{
+  height: 434px;
+  width: 434px;
+  padding: 62px 34px;
+}
+
+.card p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5F5F5F;
+}
+
+.card-title{
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.card-one p{
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 34px;
+}
+
+.card-four{
+  background-image: url("/assets/img/career-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.card-four p{
+  color: #ffff;
+}
+
+form{
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-control{
+  width: 900px;
+  height: 60px;
+  background-color: #F5FAFE;
+  border: none;
+}
+
+.textarea{
+  width: 900px;
+  height: 100px;
+  background-color: #F5FAFE;
+  border: none;
+  resize: none;
+}
+
+.application{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.application-text{
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.btn{
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 18px;
+}

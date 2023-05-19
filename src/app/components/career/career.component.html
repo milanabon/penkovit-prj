@@ -1,0 +1,120 @@
+<div class="container-fluid">
+  <section class="career">
+    <div class="career-descr">
+      <h1>Наша миссия</h1>
+      <p>Наша миссия - помочь нашим клиентам достичь своих целей, используя передовые технологии и решения. Мы гордимся нашей командой, которая состоит из опытных и квалифицированных профессионалов в области программирования, дизайна, тестирования и управления проектами.</p>
+    </div>
+  </section>
+
+  <section class="vacancies">
+    <div class="vacancies-descr">
+      <h2>Открытые вакансии</h2>
+    </div>
+    <div class="vacancies-card">
+      <div class="card-one card">
+        <h3 class="card-title">Web-разработчик</h3>
+        <p>Опыт работы с HTML, CSS, JavaScript, а также с фреймворками для веб-разработки</p>
+      </div>
+      <div class="card-two card">
+        <h3 class="card-title">QA-инженер</h3>
+        <p>Мы ищем молодого, талантливого и энергичного Junior QA-инженера, который хочет начать свою карьеру в IT-индустрии и готов развиваться в области тестировани</p>
+      </div>
+      <div class="card-three card">
+        <h3 class="card-title">Копирайтер</h3>
+        <p>Кандидат должен иметь опыт написания текстов различной тематики для разных целевых аудиторий</p>
+      </div>
+      <div class="card-four card">
+        <h3 class="card-title">Не нашли вашей вакансии, но хотите стать частью команды? </h3>
+        <p>Оставьте свою заявку и мы рассмотрим вашу кандидатуру</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="application">
+    <div>
+      <h2>Заявка</h2>
+      <p class="application-text">Если вы готовы присоединиться к нашей команде и работать в динамичной и инновационной среде, где вы можете реализовать свой потенциал и достичь своих целей, мы приглашаем вас присоединиться к нашей IT-компании.</p>
+    </div>
+    <div class="">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Иванов Иван Иванович" formControlName="name">
+          <div
+            *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+            class="validation"
+          >
+            <small>
+              Поле не может быть пустым
+            </small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input class="form-control" placeholder="+7 (999) 999 99 99" formControlName="number">
+          <div
+            *ngIf="form.get('number')?.invalid && form.get('number')?.touched"
+            class="validation"
+          >
+            <small>
+              Неверный формат номера телефона, Введите корректный номер телефона
+            </small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="pochta@gmail.ru" formControlName="email">
+          <div
+            *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+            class="validation"
+          >
+            <small>Введите корректный email</small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Какую профессию рассматриваете?" formControlName="profession">
+          <div>
+            <small
+              *ngIf="form.get('profession')?.invalid && form.get('profession')?.touched"
+            >
+              Поле не может быть пустым
+            </small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control textarea" rows="10" placeholder="Расскажите о себе" formControlName="about"></textarea>
+          <div>
+            <small
+              *ngIf="form.get('about')?.invalid && form.get('about')?.touched"
+            >
+              Поле не может быть пустым
+            </small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Где обучались?" formControlName="education">
+          <div>
+            <small
+              *ngIf="form.get('education')?.invalid && form.get('education')?.touched"
+            >
+              Поле не может быть пустым
+            </small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Прикрепите ссылку на портфолио" formControlName="portfolio">
+          <div>
+            <small
+              *ngIf="form.get('portfolio')?.invalid && form.get('portfolio')?.touched"
+            >
+              Поле не может быть пустым
+            </small>
+          </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Согласен с <a href="https://www.youtube.com/watch?v=l6rS8Dv5g-8&ab_channel=EurovisionSongContest" class="colortext">политикой конфиденциальности</a></label>
+        </div>
+        <button type="submit" class="btn" [disabled]="form.invalid">Отправить</button>
+      </form>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

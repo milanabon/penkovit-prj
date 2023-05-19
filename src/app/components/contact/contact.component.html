@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="contact-descr">
+    <h1>Контакты</h1>
+    <p>Если у вас есть вопросы или предложения, связанные с нашей IT-компанией,<br> мы будем рады общению с вами. Ниже приведены наши контактные данные:</p>
+  </div>
+  <div class="contact-info">
+    <img src="assets/img/bg-contact.jpg" alt="">
+    <div class="">
+      <a href="tel:79307556969">+7 930 755 69 69</a>
+      <a href="mailto:penkov.dma@gmail.com">penkov.dma@gmail.com</a></div>
+  </div>
+  <div class="info-form">
+    <h2 class="text-center">Связаться с нами</h2>
+    <p class="text-center">Мы всегда открыты для новых связей и готовы обсудить<br> возможности сотрудничества. Не стесняйтесь связаться с<br> нами, мы будем рады услышать вас!</p>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Иванов Иван Иванович" formControlName="name">
+        <div
+          *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+          class="validation"
+        >
+          <small>
+            Поле не может быть пустым
+          </small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input class="form-control" placeholder="+7 (999) 999 99 99" formControlName="number">
+        <div
+          *ngIf="form.get('number')?.invalid && form.get('number')?.touched"
+          class="validation"
+        >
+          <small>
+            Неверный формат номера телефона, Введите корректный номер телефона
+          </small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="pochta@gmail.ru" formControlName="email">
+        <div
+          *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+          class="validation"
+        >
+          <small>Введите корректный email</small>
+        </div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Согласен с <a href="https://www.youtube.com/watch?v=l6rS8Dv5g-8&ab_channel=EurovisionSongContest" class="colortext">политикой конфиденциальности</a></label>
+      </div>
+      <button type="submit" class="btn" [disabled]="form.invalid">Отправить</button>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

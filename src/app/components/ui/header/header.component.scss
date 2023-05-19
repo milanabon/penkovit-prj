@@ -1,0 +1,40 @@
+span{
+  margin: 0;
+}
+
+mat-toolbar{
+  padding: 40px 0;
+  justify-content: space-between;
+}
+
+.btn{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 18px;
+  padding: 14px 30px;
+  margin-right: 30px;
+}
+
+mat-sidenav-container{
+  height: calc(205vh - 115vh);
+  background-color: transparent;
+  color: inherit;
+}
+
+.mat-drawer-inner-container{
+  padding-top: 100px;
+}
+
+mat-sidenav{
+  width: 30%;
+  background-color: #fff;
+}
+
+a{
+  font-weight: 400;
+  font-size: 30px;
+}

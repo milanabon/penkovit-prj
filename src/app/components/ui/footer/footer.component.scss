@@ -1,0 +1,44 @@
+a{
+  color: #B7B7B7;
+  font-weight: 300;
+}
+
+h3{
+  font-size: 24px;
+  color: #DFDDDD;
+  margin-bottom: 30px;
+}
+
+li{
+  margin-bottom: 15px;
+}
+
+input{
+  all: unset;
+  border-bottom: 1px solid #DFDDDD;
+  width: 590px;
+}
+
+input::placeholder{
+  color: #DFDDDD;
+}
+
+.footer{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #2F2F2F;
+  color: #DFDDDD;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{
+  display: block;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  color: #DFDDDD;
+}

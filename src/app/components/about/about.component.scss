@@ -1,0 +1,97 @@
+h2{
+  font-size: 32px;
+  line-height: 130%;
+}
+
+hr{
+  height: 2px;
+  margin-bottom: 160px;
+}
+
+a{
+  color: #21468D;;
+}
+
+.title{
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 130%;
+}
+
+.our-mission{
+  margin-top: 80px;
+}
+
+.our-mission-descr{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.our-mission-descr p{
+  font-size: 20px;
+  line-height: 130%;
+}
+
+img{
+  margin-bottom: 45px;
+}
+
+.our-mission-descr__block{
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  gap: 20px;
+  justify-content: end;
+  margin-bottom: 80px;
+}
+
+.text{
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.our-team{
+  margin-bottom: 80px;
+}
+
+.our-team-descr{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.img{
+  text-align: right;
+}
+
+.vacancies{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-bottom: 80px;
+}
+
+.vacancies-team-text{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.btn{
+  width: 187px;
+  height: 187px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #21468D;
+  border: 1.5px solid #21468D;
+  border-radius: 50%;
+  padding: 80px 20px;
+}
+
+.colortext{
+  color: #21468D;
+}

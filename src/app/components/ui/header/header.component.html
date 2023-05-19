@@ -1,0 +1,23 @@
+<mat-toolbar class="bg-white">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button mat-button (click) = "opened = !opened"><img src="assets/img/menu.svg" alt=""></button>
+    </button>
+    <a [routerLink]="['/contact']" class="btn">Начните свой проект</a>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav [(opened)] = "opened" mode="over">
+      <mat-list>
+        <mat-list-item><a [routerLink]="['/']">Главная</a></mat-list-item>
+        <mat-list-item><a [routerLink]="['/about']">О нас</a></mat-list-item>
+        <mat-list-item><a [routerLink]="['/services']">Услуги</a></mat-list-item>
+        <mat-list-item><a [routerLink]="['/portfolio']">Проекты</a></mat-list-item>
+        <mat-list-item><a [routerLink]="['/blog']">Блог</a></mat-list-item>
+        <mat-list-item><a [routerLink]="['/career']">Карьера</a></mat-list-item>
+        <mat-list-item><a [routerLink]="['/contact']">Контакты</a></mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
